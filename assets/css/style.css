@@ -133,6 +133,16 @@ transition: all 0.35s ease 0s;
 .header-text h2 span {
     color: orange;
 }
+.header-btn a{
+    border: 8px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 32px;
+    line-height: 42px;
+    margin: 50px auto auto;
+    text-align: center;
+    width: 235px;
+	transition: all 0.35s ease 0s;}
 .header-btn {
     border: 2px solid #fff;
     color: #fff;
@@ -214,6 +224,12 @@ transition: all 0.35s ease 0s;
 }
 #team .row{
     display: flex;
+}
+@media (min-width:300px) and (max-width:1024px)
+{
+    #team .row{
+        display:inline-table;
+    }
 }
 .t-box {
     background: #fff none repeat scroll 0 0;
@@ -1064,6 +1080,10 @@ width:50%;
 #activities .row {
     padding: 2px 20px 0px;
 }
+#team
+{
+    display:grid;
+}
 }
 @media (max-width:980px)
 {
@@ -1087,7 +1107,7 @@ width:50%;
 @media (min-width:1024px) and (max-width:1170px)
 {
 .col-md-6 {
-    width: 100%;
+    width: 20%;
 }
 #about img {
     left: 0;
